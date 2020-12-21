@@ -1,4 +1,4 @@
-const { publicResolver } = require("../dnsResolver.config.js");
+const { publicResolver } = require("dns-testing");
 
 const legacyTXT = [["legacy ball of mud", "test.nebagum.io", "TXT"]];
 

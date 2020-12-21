@@ -1,4 +1,4 @@
-const { publicResolver } = require("../dnsResolver.config.js");
+const { publicResolver } = require("dns-testing");
 
 describe("test.nebagum.io", () => {
   it.concurrent("has SOA in AWS", async () => {

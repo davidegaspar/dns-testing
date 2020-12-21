@@ -1,4 +1,4 @@
-const { publicResolver } = require("../dnsResolver.config.js");
+const { publicResolver } = require("dns-testing");
 
 describe("App3", () => {
   it.concurrent("resolves vanity url", async () => {

@@ -1,4 +1,4 @@
-const { publicResolver } = require("../dnsResolver.config.js");
+const { publicResolver } = require("dns-testing");
 
 describe("nebagum.io", () => {
   it.concurrent("delegates test subdomain to another zone", async () => {

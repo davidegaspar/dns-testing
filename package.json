@@ -1,6 +1,6 @@
 {
   "name": "dns-testing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test your live DNS with Jest.",
   "main": "index.js",
   "directories": {

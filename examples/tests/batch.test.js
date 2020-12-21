@@ -1,4 +1,4 @@
-const { publicResolver } = require("../dnsResolver.config.js");
+const { publicResolver } = require("dns-testing");
 
 const legacyRecords = [
   ["legacy app1", "app1.test.nebagum.io", "A", ["192.0.2.1"]],
