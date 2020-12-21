@@ -1,20 +1,38 @@
-# dns-testing
-Test your DNS with Jest
+# DNS Testing
 
-## install
+Test your live DNS with Jest.
+
+## Features
+- Express the DNS functionality without the DNS protocol limitations.
+- Always pings the public/private server, it does not use the local cache.
+- [Examples](./examples) that cover most use cases.
+
+## Install
 
 ```sh
-npm install
+npm install --save @davidegaspar/dns-testing
 ```
 
-## features
-- always ping the public server (does not use the local cache)
-- public server can be set in config
-- concurrency can be set (recommended: 2 to 5)
-- single record or batch
-- express the dns hierarchy without the DNS protocol limitations
+## Options
 
-## TDB
+### DNS Servers
+
+```sh
+export PUBLIC_DNS_SERVER_IP=*.*.*.* # optional
+export PRIVATE_DNS_SERVER_IP=*.*.*.* # your private DNS
+npm run test
+```
+
+### Concurrency via Jest
+
+Live DNS servers do not deal well with the speed of Jest/NodeJS, a concurrency of 2 to 5 is recomended.
+
+```js
+module.exports = {
+  verbose: true,
+  maxConcurrency: 2,
+};
+```
+
+## Future
 - retry mechanism
-- explain example tests
-- make npm package
