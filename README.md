@@ -2,6 +2,8 @@
 
 Test your live DNS with Jest.
 
+Small preconfigured DNS resolver to be used with Jest.
+
 ## Features
 - Express the DNS functionality without the DNS protocol limitations.
 - Always pings the public/private server, it does not use the local cache.
@@ -10,7 +12,7 @@ Test your live DNS with Jest.
 ## Install
 
 ```sh
-npm install --save @davidegaspar/dns-testing
+npm install --save-dev jest dns-testing
 ```
 
 ## Options
@@ -25,7 +27,7 @@ npm run test
 
 ### Concurrency via Jest
 
-Live DNS servers do not deal well with the speed of Jest/NodeJS, a concurrency of 2 to 5 is recomended.
+Overflowing DNS servers with requests can cause random test failures, a concurrency of 2 to 5 is recomended.
 
 ```js
 module.exports = {

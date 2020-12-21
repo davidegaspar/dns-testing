@@ -1,7 +1,7 @@
 {
-  "name": "@davidegaspar/dns-testing",
+  "name": "dns-testing",
   "version": "1.0.0",
-  "description": "Test your DNS with Jest",
+  "description": "Test your live DNS with Jest.",
   "main": "index.js",
   "directories": {
     "example": "examples"
